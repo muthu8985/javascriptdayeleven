@@ -7,14 +7,13 @@
   </head>
   <body>
     <script>
-        const d= new Date
-        document.write(d);
-        // by giving the dd-mm-yy value the value is invalid date 
-        //  we need to use yy-mm-dd value 
-        // const da =new Date("20-10-2024");
-        const da =new Date("2024-10-20")
-        document.write(da)
-
+      const d = new Date();
+      document.write(d);
+      // by giving the dd-mm-yy value the value is invalid date
+      //  we need to use yy-mm-dd value
+      // const da =new Date("20-10-2024");
+      const da = new Date("2024-10-20");
+      document.write(da);
     </script>
     <!-- There are 9 ways to create a new date object:
 
@@ -30,11 +29,11 @@ new Date(year,month,day,hours,minutes,seconds,ms)
 
 new Date(milliseconds)
  -->
-<!-- 7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):
+    <!-- 7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):
 
  -->
-<!-- The index value is starts with it -->
- <!-- JavaScript Stores Dates as Milliseconds
+    <!-- The index value is starts with it -->
+    <!-- JavaScript Stores Dates as Milliseconds
 JavaScript stores dates as number of milliseconds since January 01, 1970.
 
 Zero time is January 01, 1970 00:00:00 UTC.
@@ -42,37 +41,52 @@ Zero time is January 01, 1970 00:00:00 UTC.
 One day (24 hours) is 86 400 000 milliseconds.
 
 Now the time is: 1729441454303 milliseconds past January 01, 1970 -->
-<p>JavaScript will (by default) output dates using the toString() method</p>
-<p>The toDateString() method converts a date to a more readable format:
-
-</p>
-<p>The toUTCString() method converts a date to a string using the UTC standard:
-
-</p>
-<script>
-
-const dutc = new Date();
-document.write(dutc.toUTCString());
-
-</script>
-<p>The toISOString() method converts a date to a string using the ISO standard:
-
-</p>
-<script>
-     const iso= new Date();
-     document.write(iso.toISOString());
-</script>
+    <p>JavaScript will (by default) output dates using the toString() method</p>
+    <p>The toDateString() method converts a date to a more readable format:</p>
+    <p>
+      The toUTCString() method converts a date to a string using the UTC
+      standard:
+    </p>
+    <script>
+      const dutc = new Date();
+      document.write(dutc.toUTCString());
+    </script>
+    <p>
+      The toISOString() method converts a date to a string using the ISO
+      standard:
+    </p>
+    <script>
+      const iso = new Date();
+      document.write(iso.toISOString());
+    </script>
+    <p>
+      Date Get Methods Method Description getFullYear() Get year as a four digit
+      number (yyyy) getMonth() Get month as a number (0-11) getDate() Get day as
+      a number (1-31) getDay() Get weekday as a number (0-6) getHours() Get hour
+      (0-23) getMinutes() Get minute (0-59) getSeconds() Get second (0-59)
+      getMilliseconds() Get millisecond (0-999) getTime() Get time (milliseconds
+      since January 1, 1970)
+    </p>
+    <p>
+      UTC Date Get Methods Method Same As Description getUTCDate() getDate()
+      Returns the UTC date getUTCFullYear() getFullYear() Returns the UTC year
+      getUTCMonth() getMonth() Returns the UTC month getUTCDay() getDay()
+      Returns the UTC day getUTCHours() getHours() Returns the UTC hour
+      getUTCMinutes() getMinutes() Returns the UTC minutes getUTCSeconds()
+      getSeconds() Returns the UTC seconds getUTCMilliseconds()
+      getMilliseconds() Returns the UTC milliseconds
+    </p>
+    <!-- 
+Method	Description
+setDate()	Set the day as a number (1-31)
+setFullYear()	Set the year (optionally month and day)
+setHours()	Set the hour (0-23)
+setMilliseconds()	Set the milliseconds (0-999)
+setMinutes()	Set the minutes (0-59)
+setMonth()	Set the month (0-11)
+setSeconds()	Set the seconds (0-59)
+setTime()	Set the time (milliseconds since January 1, 1970)
+ -->
     <script src="index.js"></script>
-<p>Date Get Methods
-    Method	Description
-    getFullYear()	Get year as a four digit number (yyyy)
-    getMonth()	Get month as a number (0-11)
-    getDate()	Get day as a number (1-31)
-    getDay()	Get weekday as a number (0-6)
-    getHours()	Get hour (0-23)
-    getMinutes()	Get minute (0-59)
-    getSeconds()	Get second (0-59)
-    getMilliseconds()	Get millisecond (0-999)
-    getTime()	Get time (milliseconds since January 1, 1970)</p>
   </body>
 </html>
